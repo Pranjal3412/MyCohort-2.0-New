@@ -30,7 +30,7 @@ function App() {
     const{title, description} = e.target.elements
     console.log(title.value, description.value)
 
-    axios.post("http://localhost:3000/api/notes",{
+    axios.post("https://mycohort-2-0-new.onrender.com/api/notes",{
       title:title.value,
       description:description.value
     })
