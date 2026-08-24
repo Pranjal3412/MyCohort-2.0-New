@@ -10,7 +10,7 @@ function App() {
   const[editDescription, setEditDescription] = useState("")
 
   function fetchNotes(){
-    axios.get("http://localhost:3000/api/notes")
+    axios.get("https://mycohort-2-0-new.onrender.com/api/notes")
     .then(res=>{
       setNotes(res.data.notes)
     })
@@ -42,7 +42,7 @@ function App() {
   }
 
   function handleDeleteNote(noteId){
-    axios.delete("http://localhost:3000/api/notes/"+noteId)
+    axios.delete("https://mycohort-2-0-new.onrender.com/api/notes/"+noteId)
     .then(res=>{
       console.log(res.data);
       fetchNotes()
@@ -52,7 +52,7 @@ function App() {
 
   function handleUpdate(e){
     e.preventDefault()
-      axios.patch(`http://localhost:3000/api/notes/${noteId}`,{
+      axios.patch(`https://mycohort-2-0-new.onrender.com/api/notes/${noteId}`,{
       title: editTitle,
       description: editDescription
     })
