@@ -78,7 +78,7 @@ function App() {
     <div className="notes">
       {
         notes.map(note => {
-        return <div className="note">
+        return <div className="note" key={note._id}>
         <h1>{note.title}</h1>
         <h1>{note.description}</h1>
         <button onClick={()=>{handleDeleteNote(note._id)}}>delete</button>
