@@ -14,7 +14,7 @@ const jwt = require('jsonwebtoken');
     //         message: "User already exists with same email"
     //     })
     // }
-
+    
     // const isUserExistsByUsername = await userModel.findOne({username})
 
     // if(isUserExistsByUsername){

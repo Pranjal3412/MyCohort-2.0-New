@@ -2,9 +2,6 @@ const followModel = require("../models/follow.model");
 const userModel = require("../models/user.model");
 
 
-
-
-
 async function followUserController(req, res) {
      const followerUsername = req.user.username
      const followeeUsername = req.params.username
